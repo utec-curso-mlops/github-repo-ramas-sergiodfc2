@@ -3,6 +3,8 @@ import pandas as pd
 import sklearn.metrics as metrics
 import os
 
+#Esta línea va a simular que estamos trabajando en optimizar el código de preprocesamiento de datos
+#2da línea de apoyo y documentación
 
 class preprocess_data:
     _output_path = ""
