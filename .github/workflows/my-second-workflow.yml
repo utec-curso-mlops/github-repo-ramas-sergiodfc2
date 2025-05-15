@@ -20,3 +20,7 @@ jobs:
       - name: Split dataset
         run: |
           python3 src/0-split-dataset.py
+
+      - name: Preprocess dataset
+        run: |
+          python3 src/1-preprocess-dataset-train.py
