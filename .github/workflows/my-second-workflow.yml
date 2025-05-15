@@ -25,3 +25,12 @@ jobs:
           python-version: 3.12
       - name: Deploy model
         run: echo "Deploy model to AWS"
+
+  third-job:
+    needs: second-job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Greetings
+        run: echo "Hello World!"
+      - name: Print GitHub metadata
+        run: echo "${{ toJSON(github) }}"
