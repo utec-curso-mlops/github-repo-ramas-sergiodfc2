@@ -3,6 +3,8 @@ import pandas as pd
 import sklearn.metrics as metrics
 import os
 
+#Este comentario simula la corrección de un bug encontrado en el preprocesamiento de datos
+#Se encontró un erroe en el proceso de limpieza de variables con alta correlación entre sí
 
 class preprocess_data:
     _output_path = ""
